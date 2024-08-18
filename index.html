@@ -5,10 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8ddf321cf8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    backgroundImage: {
+                        'hero-background': "  linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%),url('./Images/hero-bg.png')"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <header class=" w-10/12 lg:w-3/4 m-auto">
+        <nav class="  mt-5 flex items-center justify-between">
+            <div class=" flex items-center gap-5">
+                <img src="./Images/Group 40071 (2).png" alt="">
+                <h1 class=" text-2xl md:text-3xl lg:text-4xl font-bold">Hero <span class=" text-orange-600">
+                        Travel</span></h1>
+            </div>
 
+            <div class="hidden sm:block">
+                <ul class="   flex gap-5">
+                    <li class=" text-orange-600">Home</li>
+                    <li>Packages</li>
+                    <li>Testimonial</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class=" sm:hidden text-2xl">
+                <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+
+        <!-- Hero section  -->
+        <section class=" bg-hero-background bg-cover mt-12 bg-gradient-to-t rounded-2xl ">
+            <div class=" md:w-3/4 2xl:w-1/2 m-auto text-center py-24">
+                <h1 class=" text-2xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold text-white mb-6">Explore Your Travel
+                </h1>
+                <p class=" text-white">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing.
+                    In et odio enim ac
+                    quis sapien urna eu phasellus.</p>
+
+                <div
+                    class=" flex flex-col md:flex-row justify-between mt-16 gap-3  2xl:gap-5 p-3 bg-opacity-30 bg-white rounded-md ">
+                    <input placeholder="Where go" type="text "
+                        class=" p-2 xl:p-3 2xl:p-3 2xl:w-44 box-border md:w-full  rounded-md">
+                    <select class=" p-2 md:w-full xl:p-3 2xl:p-3 2xl:w-44 box-border  rounded-md" name="" id="">
+                        <option value="">When</option>
+                    </select>
+                    <select class=" p-2 md:w-full xl:p-3 2xl:p-3 2xl:w-44 box-border  rounded-md" name="" id="">
+                        <option value="Select Type"> Select Type</option>
+                    </select>
+                    <button
+                        class=" p-2 md:w-full xl:p-3 2xl:p-3 2xl:w-44 box-border  rounded-md bg-orange-500 text-white"><i
+                            class="fa-solid fa-magnifying-glass"></i> Find
+                        Now</button>
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
